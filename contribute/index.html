@@ -1,0 +1,16 @@
+<!doctype html><html lang=en><head><meta charset=UTF-8><title>CSOC.FI » Contributions welcome</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=theme-color content="#000000"><meta name=referrer content="strict-origin-when-cross-origin"><link rel=icon href=/favicon.ico sizes=any><link rel=icon type=image/png sizes=32x32 href=/images/favicon-32.png><link rel=icon type=image/png sizes=16x16 href=/images/favicon-16.png><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css><link rel=stylesheet href=/css/style.css><script>(function(){try{var t=new URL(document.referrer).host.replace(/^www\./,""),e="dfir.fi";t===e&&!window.matchMedia("(prefers-reduced-motion: reduce)").matches&&document.documentElement.classList.add("arriving")}catch{}})()</script></head><body><header class=site-header><div class=menu><a href=/ class=logo aria-label="CSOC.FI home"><img src=/images/logo.png alt=CSOC.FI>
+</a><button class=hamburger id=hamburger type=button aria-label=Menu aria-controls=nav-links aria-expanded=false>
+<span></span><span></span><span></span></button><nav class=nav-links id=nav-links><a href=/contribute/ class=active aria-current=page>Contribute</a>
+<a href=https://dfir.fi/ class=sister-link data-sister>DFIR.FI <span aria-hidden=true>&nearr;</span></a></nav></div></header><main><div class=wrap><header class=page-head><h1>Contributions welcome</h1></header><div class="content prose"><h2 id=list-of-soc-providers>List of SOC providers</h2><ol><li><p><a href=https://github.com/SOC-FI/soc-fi target=_blank rel=noopener>Fork the source repo</a> and then clone the forked repo.</p><pre tabindex=0><code>gh repo fork https://github.com/SOC-FI/soc-fi --clone
+</code></pre></li><li><p>Create a new branch and set upstream to this repo, example:</p><pre tabindex=0><code>git checkout -b add_accenture
+git remote add upstream https://github.com/SOC-FI/soc-fi
+</code></pre></li><li><p>Add a new SOC provider, example:</p><pre tabindex=0><code>hugo new --kind provider content/providers/accenture.md
+</code></pre></li><li><p>Add the company name and website to the created MD file, example:</p><pre tabindex=0><code>title: (leave it as it was)
+date: (leave it as it was)
+draft: (leave it as it was)
+company: &#34;Accenture&#34;
+website: &#34;https://accenture.com&#34;
+</code></pre></li><li><p>Commit, example:</p><pre tabindex=0><code>git add content/providers/accenture.md
+git commit -S -m &#34;Added Accenture&#34;
+git push -u origin add_accenture
+</code></pre></li><li><p>Create a PR on the GitHub page of <a href=https://github.com/SOC-FI/soc-fi target=_blank rel=noopener>the source repo</a> by clicking Compare & pull request.</p></li></ol></div></div></main><footer class=footer><a class=mark-link href=https://0j.fi target=_blank rel=noopener aria-label="0J Consulting Oy"><img class=footer-mark src=/images/0j-mark.jpg width=120 height=120 alt="0J Consulting Oy mark"></a><p class=legal>&copy; 2026 csoc.fi &#183; operated by <a href=https://0j.fi target=_blank rel=noopener>0J Consulting Oy</a></p></footer><script src=/js/main.js defer></script></body></html>
